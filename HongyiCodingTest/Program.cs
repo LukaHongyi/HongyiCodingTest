@@ -10,9 +10,9 @@ namespace HongyiCodingTest
         {
             //Initialize a letterService and run the archive and combine function
             ILetterService letterService = new LetterService();
-            letterService.ArchiveLetters(DefaultSettings.InputPath, DefaultSettings.ArchivePath);
             letterService.CombineTwoLetters(DefaultSettings.InputAdmissionPath ,
                 DefaultSettings.InputScholarshipPath, DefaultSettings.OutputPath);
+            letterService.ArchiveLetters(DefaultSettings.InputPath, DefaultSettings.ArchivePath);
         }
     }
 }

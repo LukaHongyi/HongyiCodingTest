@@ -45,7 +45,7 @@ namespace HongyiCodingTest.Classes
                     // Use static Path methods to extract only the file name from the path.
                     string fileName = Path.GetFileName(s);
                     string destFile = Path.Combine(admissionArchiveFolder, curDate, fileName);
-                    File.Copy(s, destFile, true);
+                    File.Move(s, destFile);
                 }
                 
             }   
@@ -65,10 +65,13 @@ namespace HongyiCodingTest.Classes
                     // Use static Path methods to extract only the file name from the path.
                     string fileName = Path.GetFileName(s);
                     string destFile = Path.Combine(scholarshipArchiveFolder, curDate, fileName);
-                    File.Copy(s, destFile, true);
+                    File.Move(s, destFile);
                 }
-                
             }
+            
+            // Delete the input dated folder
+            Directory.Delete(admissionSourceFolder);
+            Directory.Delete(scholarshipSourceFolder);
             
         }
         

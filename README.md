@@ -12,16 +12,16 @@ When testing, there are some mocked files in the test System. After running this
 
 If there is no file on a certain day, there will be no dated folder in the Input folder. In this case, no file will be archived and will not have a dated folder in the Archive folder as well. However, there will be a report in the Output folder as usual, the number of combined letters will be 0.
 
-<img src="HongyiCodingTest\ScreenShots\NoletterReport.png" style="zoom:33%;" />
+<img src="HongyiCodingTest\ScreenShots\NoletterReport.png" style="zoom: 25%;" />
 
 ### Case2 (only Admission letters or only Scholarship letters)
 
-If there are only Admission letters or Scholarship letters, the program will archive any existing letters and generate a 0 combined letter report.
+If there are only Admission letters or Scholarship letters, the program will archive any existing letters and generate a report with 0 combined letters.
 
 ### Case3 (Admission letters and Scholarship letters)
 
 The program will handle well with archiving all of the existing letters into the Archive Folder and combining all the same student ID letters. Finally, the program will generate a report showing all combined student IDs and the total number of combined letters.
 
-<img src="HongyiCodingTest\ScreenShots\CombineResult.png" style="zoom:33%;" />
+<img src="HongyiCodingTest\ScreenShots\CombineResult.png" style="zoom: 25%;" />
 
-<img src="HongyiCodingTest\ScreenShots\CombineReport.png" style="zoom:33%;" />
+<img src="HongyiCodingTest\ScreenShots\CombineReport.png" style="zoom: 25%;" />
